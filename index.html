@@ -30,7 +30,10 @@
                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#sobre">Sobre</a>
                   </li>
                   <li class="nav-item ps-3">
-                    <a class="nav-link" onclick="document.getElementById('sobre').style.display='block'">Atendimento</a>
+                    <a class="nav-link" onclick="document.getElementById('sobre').style.display='block'">Funcionamento</a>
+                  </li>
+                  <li class="nav-item ps-3">
+                    <a class="nav-link" onclick="document.getElementById('modal2').style.display='block'">Atendimento</a>
                   </li>
                 </ul>
           </div>
@@ -94,9 +97,24 @@
                 </p>       
         
                 <img src="./assets/images/sobre.png" width="100" class="mx-auto">
-                <button id="entarEmContato">Entrar em Contato</button>
+                <button id="entarEmContato">Saiba Mais</button>
             </div>
         </div>
+    </div>
+
+    <div id="modal2">
+      <div>
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close" onclick="document.getElementById('modal2').style.display='none'"></button>
+      </div>
+      <img src="./assets/images/logo.png" width="100">
+      <h2> Fale com a Gente </h2>
+      <p>A sua opinião é muito importante para nós!</p>
+      <input type="text" placeholder="Nome"><br>
+      
+      <input type="email" placeholder="E-mail"><br>
+      <textarea placeholder="Digite a sua mensagem..."></textarea> 
+          
+      <button id="entarEmContato">Entrar em contato</button>
     </div>
 
 
